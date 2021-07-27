@@ -43,6 +43,7 @@ body {
   border-radius: 15px;
   position: relative;
   z-index: 10;
+  box-shadow:0 12px 12px rgba(0, 0, 0, 0.164);
 }
 .card__img {
   width: 100%;
