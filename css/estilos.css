@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+  /*COLORES*/
+  --darkcyan: hsl(185, 75%, 39%);
+  --verydarkdesaturated: hsl(229, 23%, 23%);
+  --darkgrayishblue: hsl(227, 10%, 46%);
+
+  /**/
+  --darkgray: hsl(0, 0%, 59%);
+}
+body {
+  background-color: var(--darkcyan);
+  padding: 0.1px;
+}
+.container {
+  width: 100%;
+  margin:140px auto;
+}
+.bg__top__img {
+  right: 52vw;
+  bottom: 50vh;
+  position: fixed;
+  z-index: 1;
+}
+.bg__bottom__img {
+  top: 45vh;
+  left: 52vw;
+  position: fixed;
+  z-index: 2;
+}
+.card {
+  margin: 100px auto;
+  max-width: 450px;
+  background-color: #fff;
+  border-radius: 15px;
+  position: relative;
+  z-index: 10;
+}
+.card__img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card__photo {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  margin: auto;
+  width: 100%;
+}
+.photo__img {
+  margin: auto;
+  display: block;
+  border-radius: 50%;
+  width: 128px;
+  border: 8px solid #fff;
+}
+.card__person {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.card__name {
+  font-size: 24px;
+}
+.card__age {
+  font-size: 24px;
+  padding: 0 16px;
+  color: var(--darkgray);
+  font-weight: 400;
+}
+.card__address {
+  text-align: center;
+  padding: 12px 0;
+  margin-bottom: 28px;
+}
+.card__country {
+  color: var(--darkgrayishblue);
+  font-weight: 400;
+}
+.card__statistics {
+  border-top: 1px solid var(--darkgray);
+}
+.card__substatistics {
+  padding: 42px 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.follower__heading,
+.likes__heading,
+.photos__heading {
+  font-weight: 700;
+}
+
+.follower__subheading,
+.likes__subheading,
+.photos__subheading {
+  padding: 8px 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--darkgrayishblue);
+}
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 24px;
+  }
+  .card__photo {
+    top: 28%;
+  }
+  .photo__img {
+    width: 100px;
+  }
+  .card__name {
+    font-size: 20px;
+  }
+  .card__age {
+    font-size: 20px;
+    padding: 0 12px;
+  }
+  .card__country {
+    font-size: 20px;
+  }
+  .follower__heading,
+  .likes__heading,
+  .photos__heading {
+    font-size: 20px;
+  }
+  .follower__subheading,
+  .likes__subheading,
+  .photos__subheading {
+    font-size: 16px;
+  }
+}
