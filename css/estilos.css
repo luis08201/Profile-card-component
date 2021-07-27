@@ -22,6 +22,7 @@ body {
 .container {
   width: 100%;
   margin:140px auto;
+  padding: 0 24px;
 }
 .bg__top__img {
   right: 52vw;
@@ -36,8 +37,8 @@ body {
   z-index: 2;
 }
 .card {
-  margin: 100px auto;
-  max-width: 450px;
+  margin: 210px auto;
+  max-width: 380px;
   background-color: #fff;
   border-radius: 15px;
   position: relative;
@@ -50,7 +51,7 @@ body {
 }
 .card__photo {
   position: absolute;
-  top: 35%;
+  top: 38%;
   left: 50%;
   right: 0;
   transform: translate(-50%, -50%);
@@ -62,39 +63,40 @@ body {
   margin: auto;
   display: block;
   border-radius: 50%;
-  width: 128px;
+  width: 108px;
   border: 8px solid #fff;
 }
 .card__person {
-  margin-top: 80px;
+  margin-top: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 .card__name {
-  font-size: 24px;
+  font-size: 18px;
 }
 .card__age {
-  font-size: 24px;
+  font-size: 18px;
   padding: 0 16px;
   color: var(--darkgray);
   font-weight: 400;
 }
 .card__address {
   text-align: center;
-  padding: 12px 0;
+  padding: 8px 0;
   margin-bottom: 28px;
 }
 .card__country {
   color: var(--darkgrayishblue);
   font-weight: 400;
+  font-size:18px; 
 }
 .card__statistics {
   border-top: 1px solid var(--darkgray);
 }
 .card__substatistics {
-  padding: 42px 0 16px;
+  padding: 24px 0 16px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -104,13 +106,14 @@ body {
 .likes__heading,
 .photos__heading {
   font-weight: 700;
+  font-size:18px;
 }
 
 .follower__subheading,
 .likes__subheading,
 .photos__subheading {
   padding: 8px 0;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
   color: var(--darkgrayishblue);
 }
@@ -119,10 +122,10 @@ body {
     padding: 0 24px;
   }
   .card__photo {
-    top: 28%;
+    top: 32%;
   }
   .photo__img {
-    width: 100px;
+    width:90px;
   }
   .card__name {
     font-size: 20px;
